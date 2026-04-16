@@ -1,92 +1,113 @@
-# Java WebSocket Room Manager
+# LudoWorld Multiplayer Architecture
 
-A lightweight Java room management module for WebSocket-based real-time applications.
+LudoWorld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
 
-This project provides reusable room and session management components for:
+This repository documents the high-level architecture of the platform, including room-based multiplayer design, WebSocket messaging, and authoritative server gameplay control.
 
-- multiplayer turn-based games
-- chat rooms
-- collaborative real-time applications
-- live event systems
+The purpose of this project is to present the system design principles behind LudoWorld as a scalable multiplayer platform.
 
-It is framework-agnostic at the room-management level and can be integrated into a Java WebSocket server implementation.
+---
 
-## Features
+## Repository Purpose
 
-- Create and manage rooms
-- Join and leave rooms
-- Track player sessions
-- Broadcast messages to all players in a room
-- Remove disconnected sessions
-- Auto-cleanup for empty rooms
-- Event hooks for room lifecycle actions
+This repository is intended to show:
 
-## Why this project exists
+- architecture thinking
+- multiplayer system design
+- WebSocket communication flow
+- server-authoritative gameplay control
+- room-based session management
+- future scaling direction
 
-Many real-time applications need a simple way to manage users inside rooms without rewriting the same room lifecycle logic.
+It is a technical documentation repository, not the private production codebase.
 
-This module separates:
+---
 
-- player session tracking
-- room membership
-- room broadcasting
-- room cleanup
+## Core Ideas
 
-from the application-specific game or chat rules.
+LudoWorld is built around the following concepts:
 
-## Example Use Cases
+- **Room-based multiplayer architecture**
+- **Persistent WebSocket communication**
+- **Authoritative server control**
+- **Hybrid web/mobile access**
+- **Event-driven gameplay updates**
 
-- turn-based multiplayer games
-- WebSocket chat servers
-- collaborative editing tools
-- quiz / trivia rooms
-- live classroom groups
+---
 
-## Package Structure
+## Documents
 
-- `PlayerSession` – represents a connected user
-- `Room` – stores room members and room-level operations
-- `RoomManager` – creates, joins, leaves, and removes rooms
-- `RoomEventListener` – optional event hook interface
-- `MessageRouter` – helper for routing room-scoped messages
+### [`architecture.md`](./architecture.md)
+Explains the overall platform architecture, its layers, and the responsibilities of each component.
 
-## Example
+### [`message-flow.md`](./message-flow.md)
+Explains how gameplay messages move between clients and server, including room routing and state updates.
 
-```java
-RoomManager roomManager = new RoomManager();
+### `system-diagram.png`
+A visual diagram of the platform architecture.
 
-PlayerSession alice = new PlayerSession("s1", "u1", "Alice", null);
-PlayerSession bob = new PlayerSession("s2", "u2", "Bob", null);
+---
 
-roomManager.createRoom("room-1");
-roomManager.joinRoom("room-1", alice);
-roomManager.joinRoom("room-1", bob);
+## Key Technical Themes
 
-roomManager.broadcastToRoom("room-1", "Hello room!");
-```
+- Multiplayer room management
+- Real-time WebSocket messaging
+- Server-side move validation
+- Turn-based state synchronization
+- Future support for replay systems and scalability
+
+---
+
+## Platform Summary
+
+LudoWorld combines:
+
+- Java backend services
+- WebSocket real-time communication
+- browser-based gameplay
+- Flutter mobile integration
+- cloud-hosted deployment
+
+The platform is designed to support fair gameplay by ensuring that the server is the final authority for move validation and game state changes.
+
+---
+
+## Why this architecture matters
+
+This architecture turns a traditional board game experience into a synchronized digital multiplayer platform.
+
+It also creates a foundation for future enhancements such as:
+
+- deterministic replay systems
+- spectator mode
+- scalable multiplayer infrastructure
+- predictive client simulation
+- analytics and event history
+
+---
 
 ## Notes
 
-This project intentionally does not include:
+This repository intentionally avoids sharing:
 
-- game rules
-- monetization logic
-- persistence/database code
-- authentication
-- product-specific business logic
+- sensitive credentials
+- private production settings
+- proprietary business logic
+- monetization internals
 
-It is intended to be used as a reusable building block inside a larger real-time application.
+It focuses only on architecture and system design.
 
-## Future Improvements
+---
 
-Planned ideas:
+## Future Additions
 
-- room capacity limits
-- room metadata support
-- private/public room visibility
-- pluggable serializers
-- heartbeat / idle timeout helpers
-- distributed room coordination adapters
+Possible future documents:
+
+- replay architecture
+- scalability strategy
+- predictive client simulation
+- reconnect handling design
+- session lifecycle documentation
 
 ## License
 
