@@ -46,6 +46,7 @@ Explains how gameplay messages move between clients and server, including room r
 ### `system-diagram.png`
 A visual diagram of the platform architecture.
 
+## ![LudoWorld Architecture](./system-diagram.png)
 ---
 
 ## Key Technical Themes
