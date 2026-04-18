@@ -118,9 +118,26 @@ Possible future documents:
 
 LudoWorld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
 
-This repository documents the high-level architecture of the platform, including room-based multiplayer design, WebSocket messaging, and authoritative server gameplay control.
+The architecture is framework-agnostic, allowing it to be implemented across multiple technologies and environments without being tied to a specific framework, making it adaptable for a wide range of real-time applications.
 
-The purpose of this project is to present the system design principles behind LudoWorld as a scalable multiplayer platform.
+The purpose of this project is to present the architectural principles behind LudoWorld, including room-based session management, persistent WebSocket communication, and event-driven game state coordination. It is designed to illustrate how distributed clients can interact consistently through a central authoritative server, ensuring fairness, synchronization, and extensibility across web and mobile environments.
+
+This documentation is designed to support both human developers and AI-assisted engineering workflows. It can be used with tools such as Codex or other AI agents to generate bespoke Java, JavaScript, or other implementation code directly from the architecture, or followed in development environments like VS Code to systematically build a complete real-time multiplayer system.
+
+---
+
+## `system-diagram.png`
+A visual diagram of the platform architecture.
+
+## ![LudoWorld Architecture](./system-diagram.png)
+
+## Related Implementation
+
+A reference implementation of the room/session layer described in this architecture is available here:
+
+👉 https://github.com/mkkaliel/java-websocket-room-manager
+
+This module demonstrates how the room-based multiplayer design can be implemented in Java using WebSockets.
 
 ---
 
@@ -159,10 +176,6 @@ Explains the overall platform architecture, its layers, and the responsibilities
 ### [`message-flow.md`](./message-flow.md)
 Explains how gameplay messages move between clients and server, including room routing and state updates.
 
-### `system-diagram.png`
-A visual diagram of the platform architecture.
-
-## ![LudoWorld Architecture](./system-diagram.png)
 ---
 
 ## Key Technical Themes
