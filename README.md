@@ -14,7 +14,7 @@ This documentation is designed to support both human developers and AI-assisted 
 ## `system-diagram.png`
 A visual diagram of the platform architecture.
 
-## ![LudoWorld Architecture](./system-diagram.png)
+### ![LudoWorld Architecture](./system-diagram.png)
 
 ## Related Implementation
 
@@ -53,6 +53,110 @@ LudoWorld is built around the following concepts:
 
 ---
 
+## 🌐 Live System
+
+A working implementation of this architecture is available here:
+
+This platform applies the concepts in this repository to deliver a real-time multiplayer experience across both web and mobile environments.
+
+LudoWorld supports both two-player and four-player gameplay.
+
+For demonstration purposes, you can simulate a multiplayer session by opening the game in two different browsers, devices, or emulators.
+
+🌍 Web
+👉 https://ludoworld.org
+
+📱 Android
+👉 https://play.google.com/store/apps/details?id=com.ludoworld.ludoapp
+
+See the mapping below for how each architectural component is applied in the live system.
+
+## 🔗 Architecture → Live System Mapping
+
+Below is how key parts of the architecture translate into the running system.
+
+---
+
+### 🧱 Room-Based Architecture
+
+**In this repo:**
+- Room-based design for grouping players
+- Isolation of game sessions
+
+**In LudoWorld:**
+- Each match operates as an independent room
+- Players interact only within their game session
+- Enables multiple concurrent games without interference
+
+---
+
+### 🔌 WebSocket Messaging
+
+**In this repo:**
+- Persistent WebSocket connections
+- Real-time message broadcasting
+
+**In LudoWorld:**
+- Live gameplay updates (dice rolls, token moves)
+- Real-time chat between players
+- Instant synchronization across all connected clients
+
+---
+
+### 🧠 Server-Authoritative State
+
+**In this repo:**
+- Server controls game state and validates actions
+
+**In LudoWorld:**
+- Game rules enforced server-side
+- Prevents invalid moves and client-side manipulation
+- Ensures all players see the same game state
+
+---
+
+### 🔄 Event-Driven Flow
+
+**In this repo:**
+- Message-based event handling
+- Structured message types
+
+**In LudoWorld:**
+- Events like:
+  - player join
+  - dice roll
+  - token movement
+  - turn switching
+- All processed and broadcast in real time
+
+---
+
+### 📱 Web + Mobile Integration
+
+**In this repo:**
+- Browser-based demos
+- WebSocket client-server interaction
+
+**In LudoWorld:**
+- Runs in browser and mobile WebView environments
+- Same backend serves multiple platforms
+- Consistent real-time experience across devices
+
+---
+
+### ⚙️ Session Lifecycle Management
+
+**In this repo:**
+- Handling connect / disconnect
+- Cleanup of inactive sessions
+
+**In LudoWorld:**
+- Players joining and leaving games dynamically
+- Recovery from disconnects
+- Maintaining active player state
+
+---
+
 ## Documents
 
 ### [`architecture.md`](./architecture.md)
@@ -73,7 +177,11 @@ Explains how gameplay messages move between clients and server, including room r
 
 ---
 
-## Platform Summary
+## 🎯 Summary
+
+This repository is not just a conceptual design.
+
+It represents the **core architectural patterns used in a live real-time multiplayer platform**, demonstrating how a room-based WebSocket system can scale from simple demos to full applications.
 
 LudoWorld combines:
 
