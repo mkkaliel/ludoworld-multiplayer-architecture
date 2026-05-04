@@ -1,4 +1,4 @@
-# LudoWorld System Diagram
+# Ludoworld System Diagram
 
 ## Overview
 

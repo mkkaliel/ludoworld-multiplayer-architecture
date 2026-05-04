@@ -1,4 +1,4 @@
-# LudoWorld Architecture
+# ludoworld Architecture
 
 ## Overview
 

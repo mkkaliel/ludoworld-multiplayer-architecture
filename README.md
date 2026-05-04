@@ -1,5 +1,5 @@
 
-# LudoWorld Multiplayer Architecture
+# Ludoworld Multiplayer Architecture
 
 ludoworld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
 
@@ -14,7 +14,7 @@ This documentation is designed to support both human developers and AI-assisted 
 ## `system-diagram.png`
 A visual diagram of the platform architecture.
 
-### ![LudoWorld Architecture](./system-diagram.png)
+### ![Ludoworld Architecture](./system-diagram.png)
 
 ## Related Implementation
 
