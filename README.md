@@ -1,11 +1,11 @@
 
 # LudoWorld Multiplayer Architecture
 
-LudoWorld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
+ludoworld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
 
 The architecture is framework-agnostic, allowing it to be implemented across multiple technologies and environments without being tied to a specific framework, making it adaptable for a wide range of real-time applications.
 
-The purpose of this project is to present the architectural principles behind LudoWorld, including room-based session management, persistent WebSocket communication, and event-driven game state coordination. It is designed to illustrate how distributed clients can interact consistently through a central authoritative server, ensuring fairness, synchronization, and extensibility across web and mobile environments.
+The purpose of this project is to present the architectural principles behind ludoworld, including room-based session management, persistent WebSocket communication, and event-driven game state coordination. It is designed to illustrate how distributed clients can interact consistently through a central authoritative server, ensuring fairness, synchronization, and extensibility across web and mobile environments.
 
 This documentation is designed to support both human developers and AI-assisted engineering workflows. It can be used with tools such as Codex or other AI agents to generate bespoke Java, JavaScript, or other implementation code directly from the architecture, or followed in development environments like VS Code to systematically build a complete real-time multiplayer system.
 
@@ -43,7 +43,7 @@ It is a technical documentation repository, not the private production codebase.
 
 ## Core Ideas
 
-LudoWorld is built around the following concepts:
+ludoworld is built around the following concepts:
 
 - **Room-based multiplayer architecture**
 - **Persistent WebSocket communication**
@@ -59,7 +59,7 @@ A working implementation of this architecture is available here:
 
 This platform applies the concepts in this repository to deliver a real-time multiplayer experience across both web and mobile environments.
 
-LudoWorld supports both two-player and four-player gameplay.
+ludoworld supports both two-player and four-player gameplay.
 
 For demonstration purposes, you can simulate a multiplayer session by opening the game in two different browsers, devices, or emulators.
 
@@ -83,7 +83,7 @@ Below is how key parts of the architecture translate into the running system.
 - Room-based design for grouping players
 - Isolation of game sessions
 
-**In LudoWorld:**
+**In ludoworld:**
 - Each match operates as an independent room
 - Players interact only within their game session
 - Enables multiple concurrent games without interference
@@ -96,7 +96,7 @@ Below is how key parts of the architecture translate into the running system.
 - Persistent WebSocket connections
 - Real-time message broadcasting
 
-**In LudoWorld:**
+**In ludoworld:**
 - Live gameplay updates (dice rolls, token moves)
 - Real-time chat between players
 - Instant synchronization across all connected clients
@@ -108,7 +108,7 @@ Below is how key parts of the architecture translate into the running system.
 **In this repo:**
 - Server controls game state and validates actions
 
-**In LudoWorld:**
+**In ludoworld:**
 - Game rules enforced server-side
 - Prevents invalid moves and client-side manipulation
 - Ensures all players see the same game state
@@ -121,7 +121,7 @@ Below is how key parts of the architecture translate into the running system.
 - Message-based event handling
 - Structured message types
 
-**In LudoWorld:**
+**In ludoworld:**
 - Events like:
   - player join
   - dice roll
@@ -137,7 +137,7 @@ Below is how key parts of the architecture translate into the running system.
 - Browser-based demos
 - WebSocket client-server interaction
 
-**In LudoWorld:**
+**In ludoworld:**
 - Runs in browser and mobile WebView environments
 - Same backend serves multiple platforms
 - Consistent real-time experience across devices
@@ -150,7 +150,7 @@ Below is how key parts of the architecture translate into the running system.
 - Handling connect / disconnect
 - Cleanup of inactive sessions
 
-**In LudoWorld:**
+**In ludoworld:**
 - Players joining and leaving games dynamically
 - Recovery from disconnects
 - Maintaining active player state
@@ -183,7 +183,7 @@ This repository is not just a conceptual design.
 
 It represents the **core architectural patterns used in a live real-time multiplayer platform**, demonstrating how a room-based WebSocket system can scale from simple demos to full applications.
 
-LudoWorld combines:
+ludoworld combines:
 
 - Java backend services
 - WebSocket real-time communication

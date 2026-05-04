@@ -2,7 +2,7 @@
 
 ## Overview
 
-LudoWorld is a real-time multiplayer game platform that enables synchronized gameplay between distributed players on web and mobile clients.
+ludoworld is a real-time multiplayer game platform that enables synchronized gameplay between distributed players on web and mobile clients.
 
 The platform is designed around a **room-based, server-authoritative architecture**. Each active match is treated as an isolated game room, and all meaningful gameplay decisions are validated and applied by the server.
 
@@ -177,7 +177,7 @@ This protects the game from inconsistent state and creates a foundation for fair
 
 ## Hybrid Web / Mobile Access
 
-LudoWorld supports both browser clients and mobile app access.
+ludoworld supports both browser clients and mobile app access.
 
 The mobile app uses a hybrid architecture:
 
@@ -207,7 +207,7 @@ These future directions build naturally on the current room-based, event-driven 
 
 ## Summary
 
-LudoWorld is not only a digital board game implementation. It is a real-time multiplayer platform built around:
+ludoworld is not only a digital board game implementation. It is a real-time multiplayer platform built around:
 
 - isolated room-based matches
 - persistent WebSocket communication

@@ -1,8 +1,8 @@
-# LudoWorld Message Flow
+# Ludoworld Message Flow
 
 ## Overview
 
-LudoWorld uses WebSocket-based real-time communication to coordinate gameplay between connected players.
+ludoworld uses WebSocket-based real-time communication to coordinate gameplay between connected players.
 
 The platform follows a **server-authoritative message flow**, meaning that clients send requests, but the server validates and applies the official game state changes.
 
@@ -209,7 +209,7 @@ These enhancements build naturally on the same event-oriented message flow model
 
 ## Summary
 
-The LudoWorld message flow is built around:
+The ludoworld message flow is built around:
 
 - room-scoped communication
 - authoritative server validation

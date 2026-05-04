@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the high-level system architecture of LudoWorld using a simplified diagram and layered explanation.
+This document describes the high-level system architecture of ludoworld using a simplified diagram and layered explanation.
 
 The goal is to show how different components interact in a real-time multiplayer environment using WebSockets and a server-authoritative model.
 
@@ -264,7 +264,7 @@ Possible AI prompts:
 
 ## Summary
 
-LudoWorld architecture is built around:
+ludoworld architecture is built around:
 
 - real-time WebSocket communication
 - room-based multiplayer sessions
