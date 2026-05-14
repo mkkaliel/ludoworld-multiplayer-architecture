@@ -24,35 +24,6 @@ A reference implementation of the room/session layer described in this architect
 
 This module demonstrates how the room-based multiplayer design can be implemented in Java using WebSockets.
 
----
-
-## Repository Purpose
-
-This repository is intended to show:
-
-- architecture thinking
-- multiplayer system design
-- WebSocket communication flow
-- server-authoritative gameplay control
-- room-based session management
-- future scaling direction
-
-It is a technical documentation repository, not the private production codebase.
-
----
-
-## Core Ideas
-
-ludoworld is built around the following concepts:
-
-- **Room-based multiplayer architecture**
-- **Persistent WebSocket communication**
-- **Authoritative server control**
-- **Hybrid web/mobile access**
-- **Event-driven gameplay updates**
-
----
-
 ## 🌐 Live System
 
 A working implementation of this architecture is available here:
@@ -164,6 +135,33 @@ Explains the overall platform architecture, its layers, and the responsibilities
 
 ### [`message-flow.md`](./message-flow.md)
 Explains how gameplay messages move between clients and server, including room routing and state updates.
+
+---
+
+## Repository Purpose
+
+This repository is intended to show:
+
+- architecture thinking
+- multiplayer system design
+- WebSocket communication flow
+- server-authoritative gameplay control
+- room-based session management
+- future scaling direction
+
+It is a technical documentation repository, not the private production codebase.
+
+---
+
+## Core Ideas
+
+ludoworld is built around the following concepts:
+
+- **Room-based multiplayer architecture**
+- **Persistent WebSocket communication**
+- **Authoritative server control**
+- **Hybrid web/mobile access**
+- **Event-driven gameplay updates**
 
 ---
 
