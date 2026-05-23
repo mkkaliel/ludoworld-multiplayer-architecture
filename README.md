@@ -16,13 +16,7 @@ A visual diagram of the platform architecture.
 
 ### ![Ludoworld Architecture](./system-diagram.png)
 
-## Related Implementation
 
-A reference implementation of the room/session layer described in this architecture is available here:
-
-👉 https://github.com/mkkaliel/java-websocket-room-manager
-
-This module demonstrates how the room-based multiplayer design can be implemented in Java using WebSockets.
 
 ## 🌐 Live System
 
@@ -99,6 +93,14 @@ For demonstration purposes, you can simulate a multiplayer session by opening th
 - Distributed room partitioning
 - Redis-based coordination layer
 - Horizontal scaling architecture
+
+## Related Implementation
+
+A reference implementation of the room/session layer described in this architecture is available here:
+
+👉 https://github.com/mkkaliel/java-websocket-room-manager
+
+This module demonstrates how the room-based multiplayer design can be implemented in Java using WebSockets.
 
 See the mapping below for how each architectural component is applied in the live system.
 
