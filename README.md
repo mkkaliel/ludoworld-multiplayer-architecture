@@ -40,6 +40,66 @@ For demonstration purposes, you can simulate a multiplayer session by opening th
 📱 Android
 👉 https://play.google.com/store/apps/details?id=com.ludoworld.ludoapp
 
+## 🛠️ Technology Stack
+
+### Backend
+- Java
+- Jakarta WebSockets / Java WebSocket API
+- Apache Tomcat
+- REST-style service integration
+- Event-driven multiplayer architecture
+
+### Frontend
+- JavaScript
+- HTML5
+- CSS3
+- Real-time WebSocket client communication
+
+### Mobile
+- Flutter
+- Flutter InAppWebView
+- Hybrid WebView architecture
+- Native ↔ JavaScript bridge communication
+
+### Database & Storage
+- PostgreSQL
+- In-memory session/state coordination
+- LocalStorage for client persistence
+
+### Cloud & Infrastructure
+- AWS EC2
+- AWS RDS PostgreSQL
+- AWS Route53
+- CloudFront CDN
+- Linux server deployment
+
+### Real-Time Systems
+- Persistent WebSocket communication
+- Room/session-based multiplayer architecture
+- Server-authoritative game state management
+- Event-driven synchronization
+- Reconnect and session recovery handling
+
+### Monetization & Platform Services
+- Google AdMob rewarded ads
+- Firebase Analytics
+- Firebase Crashlytics
+- Google Sign-In integration
+
+### Development & DevOps
+- Git & GitHub
+- Eclipse IDE
+- VS Code
+- WAR-based deployment pipeline
+- GitHub Actions (CI/CD)
+
+### Planned / Experimental Architecture
+- Predictive client simulation
+- Deterministic multiplayer replay system
+- Distributed room partitioning
+- Redis-based coordination layer
+- Horizontal scaling architecture
+
 See the mapping below for how each architectural component is applied in the live system.
 
 ## 🔗 Architecture → Live System Mapping
