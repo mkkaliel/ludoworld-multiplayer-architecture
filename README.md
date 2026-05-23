@@ -1,5 +1,5 @@
 
-# Ludoworld Multiplayer Architecture
+# LudoWorld Multiplayer Architecture
 
 ludoworld is a real-time multiplayer gaming platform designed for synchronized gameplay across web and mobile clients.
 
@@ -34,7 +34,7 @@ For demonstration purposes, you can simulate a multiplayer session by opening th
 📱 Android
 👉 https://play.google.com/store/apps/details?id=com.ludoworld.ludoapp
 
-## 🛠️ Technology Stack For Ludoworld
+## 🛠️ Technology Stack for LudoWorld
 
 ### Backend
 - Java
