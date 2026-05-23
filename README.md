@@ -40,7 +40,7 @@ For demonstration purposes, you can simulate a multiplayer session by opening th
 📱 Android
 👉 https://play.google.com/store/apps/details?id=com.ludoworld.ludoapp
 
-## 🛠️ Technology Stack
+## 🛠️ Technology Stack For Ludoworld
 
 ### Backend
 - Java
